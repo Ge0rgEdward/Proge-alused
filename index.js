@@ -328,3 +328,87 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 
 
 
+
+
+// WHILE LOOPS = repeat some code WHILE some condition is true 
+
+
+// while loop üksinda
+
+// let username ;
+
+// while(username === "" || username === null) {
+//     username = window.prompt (`Enter your name`)
+// }
+
+// console.log (`Hello ${username}`);
+
+
+// DO WHILE loop
+
+// s
+
+
+// do{
+
+//     username = window.prompt('Enter your username');
+//     password = window.prompt('Enter you password');
+    
+//     if(username === "Georg" && password === "georg"){
+//         loggedIn = true;
+//         console.log('You are logged in');
+//     }
+//     else{
+//         console.log("Invalid credentials! Please try again");
+//     }
+// }while(loggedIn)
+
+
+
+// FOR LOOP = repeat some code a LIMITED amount of times
+
+
+
+// for(let i = 10; i > 0; i--) {
+//     console.log(i)
+// }
+// console.log('Happy new year')
+
+//BREAK = sellel hetkel kui on jõudnud määratud väärtuseni siis loop katestatakse
+
+// for(let i = 1; i <= 20; i++){
+//     if(i == 13){
+
+//         break;
+//     }
+//     else{
+//         console.log(i)
+//     }
+
+// }
+
+// // CONTINUE = katkestab kui jõuab max väärtuseni 
+
+// for(let i = 1; i <= 20; i++){
+//     if(i == 13){
+//     continue;
+//     }
+//     else{
+//         console.log(i)
+//     }
+
+// }
+
+
+// NUMBER GUESSING GAME 
+
+const minNum = 1;
+const maxNum = 100;
+
+
+
+const answer = Math.random();
+
+
+
+
