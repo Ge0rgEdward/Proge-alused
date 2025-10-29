@@ -400,14 +400,42 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 // }
 
 
-// NUMBER GUESSING GAME 
 
-const minNum = 1;
-const maxNum = 100;
+// FUNKTSIOON = kood mida saab taas kasutada
+//              teed koodi ning saad kasutada ükskõik kuna
+//              kutsu funktsioon et seda läbi lüüa
+
+// function happyBirthday(username, age) {
+//     console.log('Happy birthday to you!')
+//     console.log(`Happy birthday dear ${username}!`)
+//     console.log(`You are ${age} old!`)
+// }
+
+// happyBirthday('Georg', 23);
+
+
+// function add(x,y){
+//     let result = x + y;
+//     return result; // võib ka kohe returni panna tehte (return x+y)
+// }
+
+// let answer = add(2, 3);
+// console.log(answer)
+
+
+// function isEven(number){
+//     if(number % 2 === 0){
+//         return true;
+//     }
+//     else{
+//         return false
+//     }
+// }
+
+// console.log(isEven(18));
 
 
 
-const answer = Math.random();
 
 
 
