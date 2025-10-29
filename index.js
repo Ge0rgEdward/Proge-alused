@@ -404,10 +404,30 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 
 const minNum = 1;
 const maxNum = 100;
+const answer = Math.floor(Math.random() * (minNum - maxNum + 1)) + minNum;
+let isGuessed = false
+
+let attempts = 5;
+
+while(attempts >= 0 && !isGuessed){
+    let guess = window.prompt ('Arva ära suva number 1-100. Saad 5x arvata');
+    attempts--
+    if(guess === answer){
+        window.alert('Arvasid õigesti!');
+        isGuessed = true;
+    }
+    else if (guess < answer){
+        window.alert('Arvasid valesti! Proovi uuesti');
+    }
+    else if (guess > answer){
+        window.alert('Arvasid valesti! Proovi uuesti')
+    }
+    else{
+        window.alert('Katsed said otsa! :((')
+    }
+}
 
 
-
-const answer = Math.random();
 
 
 
