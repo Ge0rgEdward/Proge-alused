@@ -401,7 +401,6 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 
 
 
-<<<<<<< Updated upstream
 // FUNKTSIOON = kood mida saab taas kasutada
 //              teed koodi ning saad kasutada ükskõik kuna
 //              kutsu funktsioon et seda läbi lüüa
@@ -434,7 +433,7 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 // }
 
 // console.log(isEven(18));
-=======
+
 // const minNum = 1;
 // const maxNum = 100;
 // const answer = Math.floor(Math.random() * (minNum - maxNum + 1)) + minNum;
@@ -638,6 +637,14 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 // const hello = (name) => console.log(`Hello, ${name}!`);
 
 // hello("Georg");
+
+
+// setTimeout( () => console.log('Hello!'), 3000);   
+
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const square = numbers.map((element) => Math.pow(element, 2));
+
 
 
 
