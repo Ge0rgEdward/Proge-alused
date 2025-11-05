@@ -401,6 +401,7 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 
 
 
+<<<<<<< Updated upstream
 // FUNKTSIOON = kood mida saab taas kasutada
 //              teed koodi ning saad kasutada ükskõik kuna
 //              kutsu funktsioon et seda läbi lüüa
@@ -433,6 +434,212 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 // }
 
 // console.log(isEven(18));
+=======
+// const minNum = 1;
+// const maxNum = 100;
+// const answer = Math.floor(Math.random() * (minNum - maxNum + 1)) + minNum;
+// let isGuessed = false
+
+// let attempts = 5;
+
+// while(attempts >= 0 && !isGuessed){
+//     let guess = window.prompt ('Arva ära suva number 1-100. Saad 5x arvata');
+//     attempts--
+//     if(guess === answer){
+//         window.alert('Arvasid õigesti!');
+//         isGuessed = true;
+//     }
+//     else if (guess < answer){
+//         window.alert('Arvasid valesti! Proovi uuesti');
+//     }
+//     else if (guess > answer){
+//         window.alert('Arvasid valesti! Proovi uuesti')
+//     }
+//     else{
+//         window.alert('Katsed said otsa! :((')
+//     }
+// }
+
+
+
+// FOREACH meetod 
+
+//forEach()= method used to iterate over the elements of an array and apply a specified function (callback) to each element 
+
+
+// let number = [1, 2, 3, 4, 5];
+
+// numbers.forEach(square);
+// numbers.forEach(display);
+
+// function double(element, index, array){
+//     array[index] = element * 2;
+
+
+// }
+
+// function triple(element, index, array){
+//     array[index] = element * 3;
+// }
+
+// console.log(element)
+
+
+// let fruits = ["APPLE", "ORANGE", "BANANA", "COCONUT"];
+
+
+// fruits.forEach(lowerCase);
+
+// fruits.forEach(display);
+
+
+
+// // function upperCase(element, index, array){
+// //     array[index] = element.toUpperCase();
+// // }
+
+// function lowerCase(element, index, array){
+//     array[index] = element.toLowerCase();
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+
+
+// let fruits = ["apple", "orange", "banana", "coconut"];
+
+// fruits.forEach(cap);
+// fruits.forEach(display);
+
+// function cap(element, index, array){
+//     array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+
+//.map() = accepts a callback and applies that fubctuib to each element of an array then return a new array
+
+// const numbers = [1,2,3,4,5];
+
+// const cube = numbers.map(cube);
+
+// numbers.map(cube);
+
+// function square(element){
+//     return Math.pow(element, 2)
+// }
+
+// function cube(element){
+//     return Math.pow(element, 3)
+// }
+
+// console.log(cube)
+
+
+// const dates = ["01.02.2025","03.02.2025","02.02.2025" ];
+
+// const formatDates = dates.map(formattedDates);
+
+// console.log(formattedDates);
+
+// function formattedDates(element) {
+//     const parts = element.split(".");
+//     return `${parts[1]}-${parts[2]}-${parts[3]}`;
+// }
+
+
+// .filter() = creates a new array by filtering out elements 
+
+// const ages = [16, 17, 18, 18, 19, 20, 60];
+// const overEighteen = ages.filter(isAdult)
+
+// console.log(overEighteen)
+
+// function isAdult(element) {
+//     return element >= 18
+// }
+
+
+// const words = ["APPLE", "ORANGE", "BANANA", "COCONUT"]
+// const shortWord = words.filter(getShortWord)
+
+// console.log(shortWord);
+
+// function getShortWord(element){
+//     return element.length <= 6
+// }
+
+
+// .reduce() = reduce the elements of an array to a single value
+// ACCUMULATOR hoiab mälus seda elementi millega töötad
+// const prices = [5, 30, 10, 25, 15, 20];
+// const total = prices.reduce(sum);
+
+// console.log(`$${total.toFixed(2)}`)
+
+// function sum(accumulator, element){
+//     return accumulator + element; 
+// }
+
+// const grades = [50, 60, 70, 80, 90]
+
+// const maximum = grades.reduce(parimHinne);
+// const minimum = grades.reduce(halvimHinne)
+
+// console.log(minimum)
+
+// function parimHinne(accumulator, element){
+//     return Math.max(accumulator, element);
+// }
+
+// function halvimHinne(accumulator, element){
+//     return Math.min(accumulator, element);
+// }
+
+
+
+
+// Function declaration = define a reusable block of code that performs a specific task 
+
+
+// function hello(){
+//     console.log('Hello')
+// }
+
+
+// Function expression = moodus defineerida funktsioone väärtuste ning muutujatena
+
+// const hello = function(){
+//     console.log('Hello')
+// }
+
+
+// setTimeout(function(){
+//     console.log('Hello!')
+// }, 3000)
+
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const square= numbers.map(function(element){
+//     return Math.pow(element, 2)
+// })
+
+// console.log(square);
+
+
+// arrow functions = a concise way to write function expression
+
+// const hello = (name) => console.log(`Hello, ${name}!`);
+
+// hello("Georg");
+
+
 
 
 
