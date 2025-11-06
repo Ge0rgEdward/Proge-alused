@@ -522,7 +522,7 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 // }
 
 
-//.map() = accepts a callback and applies that fubctuib to each element of an array then return a new array
+//.map() = accepts a callback and applies that function to each element of an array then return a new array
 
 // const numbers = [1,2,3,4,5];
 
@@ -680,16 +680,47 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 
 
 
-const person1 = {
-    firstName: "Spongebob", 
-    lastName: "Squarepants",
-    favFood: "Kraby Patty",
-    sayHello: function(){console.log(`Hi I am ${this.firstName} ${this.lastName}`)},
-    eat: function(){console.log(`I am eating ${this.favFood}!`)},
+// const person1 = {
+//     firstName: "Spongebob", 
+//     lastName: "Squarepants",
+//     favFood: "Kraby Patty",
+//     sayHello: function(){console.log(`Hi I am ${this.firstName} ${this.lastName}`)},
+//     eat: function(){console.log(`I am eating ${this.favFood}!`)},
+// }
+
+// person1.sayHello();
+// person1.eat();
+
+
+let shoppingCart = [
+    {name: "apple", quantity: 4},
+    {name: "banana", quantity: 2},
+    {name: "orange", quantity: 5},
+    {name: "milk", quantity: 1},
+    {name: "bread", quantity: 2},
+]
+
+let total = shoppingCart.reduce(sumProducts,0)
+
+let newItem = shoppingCart.push({ name: "yogurt", quantity: 3 }) 
+
+
+
+function sumProducts(accumulator, element){
+    return accumulator + element.quantity;
 }
 
-person1.sayHello();
-person1.eat();
+
+console.log(shoppingCart)
+
+
+
+
+console.log(total)
+
+
+
+
 
 
 
