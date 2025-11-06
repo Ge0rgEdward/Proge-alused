@@ -642,8 +642,56 @@ console.log(`Your total is $${purchaseAmount-purchaseAmount*(discount/100)}`);
 // setTimeout( () => console.log('Hello!'), 3000);   
 
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const square = numbers.map((element) => Math.pow(element, 2));
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const square = numbers.map((element) => Math.pow(element, 2));
+
+
+
+// object = a collection of related properties and/or methods
+//             objexct = {key: value, function()}
+
+// const person1 = {
+//     firstName: "Spongebob", 
+//     lastName: "Squarepants",
+//     age: 30,
+//     isEmplyed: true, 
+//     sayHello: function(){console.log("Hi I am Spongebob!")},
+// }
+
+// const person2 = {
+//     firstName: "Patrick", 
+//     lastName: "Star",
+//     age: 28,
+//     isEmployed: false,
+//     sayHello: function(){console.log("Hi I am Patrick!")}, 
+// }
+
+// console.log(person1.firstName, person1.lastName);
+// console.log(person1.age)
+
+// console.log(person2.firstName, person2.lastName);
+// console.log(person2.age, person2.isEmployed)
+
+// person1.sayHello();
+// person2.sayHello();
+
+
+// this = reference to the object where THIS is used 
+
+
+
+const person1 = {
+    firstName: "Spongebob", 
+    lastName: "Squarepants",
+    favFood: "Kraby Patty",
+    sayHello: function(){console.log(`Hi I am ${this.firstName} ${this.lastName}`)},
+    eat: function(){console.log(`I am eating ${this.favFood}!`)},
+}
+
+person1.sayHello();
+person1.eat();
+
+
 
 
 
